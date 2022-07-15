@@ -1,0 +1,12 @@
+# Site settings
+name: zmNinja
+title: zmNinja
+email: pliablepixels@gmail.com
+description: "Better than sliced toast by 73%. FDA might have said so"
+baseurl: ""
+url: "http://pliablepixels.github.io"
+disqusid: zmNinja
+
+# Build settings
+markdown: kramdown
+permalinks: pretty

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+{% include head.html %}
+
+
+<body>
+    {% include header_blog.html %}
+
+    <h2 style="padding-top:100px" class="title text-center"><img class="animated rollIn" width="50px" src="/public/images/zmninja.png"/><a href="/blog">&nbsp;zmNinja Blog Archive</a></h2>
+
+
+    <div class="container">
+
+
+
+        <section id="blog" class="blog">
+            <div class="blog-inner">
+
+
+                <h2>Archives</h2>
+
+
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        {{ post.date | date: "%d %B %Y" }} -
+                        <a href="{{ post.url }}">{{ post.title }}</a> 
+                    </li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+        {% include footer.html %}
+
+</body>
+
+</html>
